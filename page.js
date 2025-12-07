@@ -1,6 +1,6 @@
-export const dynamic = 'force-dynamic';
+import Papa from 'papaparse';
 
-export default function Home() {
+   const SHEET_CSV_URL = 'https://docs.google.com/...
   return (
     <div style={{
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
