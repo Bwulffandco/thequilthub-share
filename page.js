@@ -179,6 +179,7 @@ export default async function SharePage({ params }) {
           padding: '40px',
           boxShadow: '0 4px 20px rgba(113, 106, 86, 0.08)'
         }}>
+          {/* Spinner */}
           <div style={{
             textAlign: 'center',
             marginBottom: '32px'
@@ -217,6 +218,7 @@ export default async function SharePage({ params }) {
             </p>
           </div>
           
+          {/* Business Info */}
           {photo && (
             <div style={{
               textAlign: 'center',
@@ -271,6 +273,7 @@ export default async function SharePage({ params }) {
             </p>
           )}
           
+          {/* Social Links */}
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
@@ -279,7 +282,7 @@ export default async function SharePage({ params }) {
             marginBottom: '32px'
           }}>
             {website && (
-              
+              <a
                 href={website.startsWith('http') ? website : `https://${website}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -297,7 +300,7 @@ export default async function SharePage({ params }) {
               </a>
             )}
             {instagram && (
-              
+              <a
                 href={`https://instagram.com/${instagram.replace('@', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -315,7 +318,7 @@ export default async function SharePage({ params }) {
               </a>
             )}
             {facebook && (
-              
+              <a
                 href={facebook.startsWith('http') ? facebook : `https://${facebook}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -334,6 +337,7 @@ export default async function SharePage({ params }) {
             )}
           </div>
           
+          {/* Manual Link */}
           <p style={{
             textAlign: 'center',
             fontSize: '0.9rem',
